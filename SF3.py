@@ -39,7 +39,8 @@ for result in bulk.get_all_results_for_query_batch(batch):
     	dict1 = dict(row)
     	list1.append(dict1)
 df = pd.DataFrame(list1)
+df = df[['Id', 'Name', 'Service_ID__c', 'Account_Name__c', 'Id']]
 
 report_name_excel = str(input('Please enter the report name '))
-df.to_csv(report_name_excel+'.csv',index=True)
+df.to_csv(report_name_excel+'.csv',index=False)
 
