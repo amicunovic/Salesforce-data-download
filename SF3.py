@@ -10,7 +10,7 @@ print("This program is used to download all IBs from the system \n\n\nOnce all t
 
 list1 = []
 
-bulk = SalesforceBulk(username='amicunovic@brandstate.com.au',password='Alisa200@',security_token='MoBunoVK8lsNqFVZ3CqHA0W5d')
+bulk = SalesforceBulk(username='Your email',password='Your Password',security_token='Your security token')
 
 '''
 # THIS IS USED FO JSON
